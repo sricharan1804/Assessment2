@@ -1,0 +1,58 @@
+.container{
+  margin-top: 30px;
+}
+.card-title{
+  background-color: aliceblue;
+  height: 70px;
+}
+.text-center{
+  margin-top: 20px;
+}
+label{
+  font-style:italic;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 5px;
+  font-family: cursive;
+}
+.form-control, .form{
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  width: 90%;
+  height: auto;
+  margin: 5px;
+  color: #000;
+}
+.errors{
+  font-size: 15px;
+  font-weight: 900;
+  color: red;
+  font-style: italic;
+  font-family: monospace;
+  margin: 10px;
+}
+span{
+    margin: 30px;
+    cursor: pointer;
+    color: red;
+    font-size: 25px;
+    border: 2px solid #000;
+}
+.card-footer{
+  background-color: #000;
+}
+.btn-md{
+    font-size: 20px;
+    background-color: transparent;
+    border: 2px solid black;
+    margin: 2px;
+    padding: 10px;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+.btn-md:hover{
+  color: #ff7846;
+}

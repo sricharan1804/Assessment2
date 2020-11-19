@@ -1,0 +1,36 @@
+<div class="container">
+  <div class="row">
+  <div class="col-lg-12">
+    <table class="table table-bordered">
+      <caption>
+        <button class="btn btn-danger btn-md" (click)="delete()">Delete Selected</button>
+      </caption>
+      <thead>
+        <tr>
+          <th><input type="checkbox" [checked]="isAllCheckBoxChecked()" (change)="checkAllCheckBox($event)"></th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Date of Birth</th>
+          <th>Phone(s)</th>
+          <th>Address</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let reg of registerFormUsersList; let i=index; let odd = odd" [ngClass]="odd ? 'odd_col' : 'even_col'">
+          <td><input type="checkbox"  [(ngModel)]="registerFormUsersList[i].checked"></td>
+          <td>{{reg.firstName}} {{reg.lastName}}</td>
+          <td>{{reg.emailAddress}}</td>
+          <td>{{reg.dob}}</td>
+          <td>{{reg.phoneNumber}}</td>
+          <td>{{reg.address}}</td>
+          <td>
+            <button class="btn btn-sm btn-danger" (click)="onDelete()">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  </div>
+</div>
+
